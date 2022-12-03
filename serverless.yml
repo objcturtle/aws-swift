@@ -1,0 +1,35 @@
+service: #### FILL THIS IN ####
+frameworkVersion: "3"
+useDotenv: true
+package:
+  individually: true
+
+provider:
+  name: aws
+  profile: ${env:AWS_PROFILE}
+  region: us-east-2
+  stage: ${opt:stage, "dev"}
+  runtime: provided.al2
+  architecture: arm64
+  timeout: 10
+  httpApi:
+    cors: true
+  environment:
+    LAMBDA_AWS_ACCESS_KEY_ID: ${env:LAMBDA_AWS_ACCESS_KEY_ID}
+    LAMBDA_AWS_SECRET_ACCESS_KEY: ${env:LAMBDA_AWS_SECRET_ACCESS_KEY}
+  iam:
+    role:
+      statements:
+        - Effect: 'Allow'
+          Action:
+            - 'lambda:InvokeFunction'
+          Resource: "*"
+
+functions:
+  api:
+    handler: bootstrap
+    package:
+      individually: true
+      artifact: users/.build/lambda/api/lambda.zip
+    events:
+      - httpApi: "*"

@@ -1,0 +1,4 @@
+.serverless
+*/.build
+*/.swiftpm
+Package.resolved

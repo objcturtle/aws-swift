@@ -19,12 +19,19 @@ A starter template for creating a serverless API in Swift on AWS Lambda
 
 ```
 serverless create --template-url https://github.com/thecaseyhanley/aws-swift --path <my-cool-swift-api>
+
+cd <my-cool-swift-api>
 ```
 
 ### 2. Configure an AWS profile
+
+This will use `<my-cool-swift-api>` as the name of the profile:
 ```
-cd <my-cool-swift-api>
-make set-profile PROFILE=<my-aws-profile-name>
+make set-profile
+```
+OR you can set the profile name explicitly:
+```
+make set-profile PROFILE=<my-custom-aws-profile>
 ```
 
 ### 3. Deploy starter project to AWS

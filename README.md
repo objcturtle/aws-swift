@@ -19,7 +19,9 @@ A starter template for creating a serverless API in Swift on AWS Lambda
 
 ```
 serverless create --template-url https://github.com/thecaseyhanley/aws-swift --path <my-cool-swift-api>
+```
 
+```
 cd <my-cool-swift-api>
 ```
 

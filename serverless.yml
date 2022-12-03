@@ -30,6 +30,6 @@ functions:
     handler: bootstrap
     package:
       individually: true
-      artifact: users/.build/lambda/api/lambda.zip
+      artifact: api/.build/lambda/api/lambda.zip
     events:
       - httpApi: "*"

@@ -1,3 +1,3 @@
 # api
 
-A template for creating a serverles API in Swift
+A template for a Swift package representing a serverless API

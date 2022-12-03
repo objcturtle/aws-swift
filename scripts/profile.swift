@@ -9,8 +9,6 @@ if CommandLine.arguments.count > 1 {
     profile = String(projectName)
 }
 
-print("AWS_PROFILE is now \(profile)")
-
 let file = ".aws/credentials"
 let dir = FileManager.default.homeDirectoryForCurrentUser
 let fileURL = dir.appendingPathComponent(file)

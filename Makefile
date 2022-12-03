@@ -1,4 +1,5 @@
 set-profile:
+	chmod +x scripts/profile.swift
 	scripts/profile.swift $(PROFILE)
 
 deploy:

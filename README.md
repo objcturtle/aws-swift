@@ -15,29 +15,29 @@ A starter template for creating a serverless API in Swift on AWS Lambda
 
 ## Getting Started
 
-### Create a new project using this template
+### 1. Create a new project using this template
 
 ```
 serverless create --template-url https://github.com/thecaseyhanley/aws-swift --path <my-cool-swift-api>
 ```
 
-### Configure an AWS profile
+### 2. Configure an AWS profile
 ```
 cd <my-cool-swift-api>
 make set-profile PROFILE=<my-aws-profile-name>
 ```
 
-### Deploy starter project to AWS
+### 3. Deploy starter project to AWS
 ```
 make deploy
 ```
 
-### Test that the API is working
+### 4. Test that the API is working
 ```
 curl <api-endpoint>
 ```
 
-### Open the Swift package in Xcode to download dependencies
+### 5. Start writing some Swift on the server!
 ```
 open api/Package.swift
 ```
@@ -53,6 +53,6 @@ open api/Package.swift
 
 ---
 
-#### Notes
+### Notes
 
 I made this for personal usage, so it definitely has room for improvement. Hopefully it can help someone troubleshoot their own application of Swift on the server. Enjoy!

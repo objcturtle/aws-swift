@@ -44,7 +44,7 @@ make deploy
 curl <api-endpoint>
 ```
 
-### 5. Start writing some Swift on the server!
+### 5. Start writing some Swift on the server(less)!
 ```
 open api/Package.swift
 ```
